@@ -1,0 +1,18 @@
+<div class='container'>
+	<div>
+		<a class="btn btn-success btn-sm" href="<%= question_path(@question) %>">Question</a>
+	</div>
+	
+	<div class='media'>
+		<div class="media-left">
+			<a href="#">
+			<img class='media-object' src="<%= @answer.gravatar %>">
+			</a>
+		</div>
+		<div class="media-body">
+			<h4 class="media-heading"><%= @answer.email %> answered:</h4>
+			<div><%= time_ago_in_words @answer.created_at %> ago</div>
+			<%= @answer.body %>
+		</div>
+	</div>
+</div>
