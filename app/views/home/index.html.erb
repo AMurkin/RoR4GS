@@ -1,6 +1,6 @@
 <div class="well hello">
 	<h4>The Universe is the totality of everything that exists, everything that has existed, and everything that will exist.</h4>
-	<p>This Q&amp;A site ...</p>
+	<p class="hidden-xs">This Q&amp;A site ...</p>
 </div>
 
 <div class='container'>
@@ -14,9 +14,9 @@
 			</div>
 			<div class="media-body">
 				<h4 class="media-heading"><%= q.email %> asked:</h4>
-				<div class="time"><%= time_ago_in_words q.created_at %> ago</div>
-				<%= q.body %>
-				<div>
+				<div class="time hidden-xs"><%= time_ago_in_words q.created_at %> ago</div>
+				<div><%= truncate q.body, length: 300 %></div>
+				<div class="hidden-xs">
 					<a href="<%= question_path(q) %>" class="btn btn-success btn-xs">View answers</a>
 				</div>
 			</div>
