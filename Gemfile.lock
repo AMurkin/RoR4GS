@@ -67,7 +67,7 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
-    mime-types (2.99)
+    mime-types (2.99.1)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
     multi_json (1.11.2)
@@ -154,7 +154,7 @@ DEPENDENCIES
   coffee-script-source (= 1.8.0)
   jbuilder (~> 2.0)
   jquery-rails
-  rails (= 4.2.5.1)
+  rails (~> 4.2.0)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   sqlite3
